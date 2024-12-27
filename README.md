@@ -1,21 +1,21 @@
-# Deep Fusion of Local and Non-Local Features for Precision Landslide Mapping
+# 人工智能复现
+# 局部和非局部特征的深度融合，实现精确的滑坡制图
 
-## Introduction
-We proposes an effective approach to fuse both local and nonlocal features for precision landslide mapping, which achieves state-of-the-art segmentation performance for the landslide using images covering post-earthquake Jiuzhaigou.
+## 介绍
+提出了一种融合局部和非局部特征以进行精确滑坡测绘的有效方法，该方法使用覆盖震后九寨沟的图像实现最先进的滑坡分割性能。
 
-## Testing set result
+## 测试集结果
 
-We test our DA-U-Net with more than 1000 UAV images convering Jiuzhaigou. We have released one sample image in the paper to reproduce the results.
-Due to regulatory issues of China, we must remove the geoference information and downsample the image to half the size.
+使用 1000 多张聚合九寨沟的无人机图像测试了我们的 DA-U-Net。
 
-## Usage
+## 用法
 
-  - The code is tested on miniconda3:4.7.10-cuda10.1-cudnn7-ubuntu18.04, please install tensorflow-gpu(version 1.9.0), Anaconda, CUDA9.0,CUDNN7.0 from source.
-  - Install the dependencies using pip
+  - 代码在 miniconda3：4.7.10-cuda10.1-cudnn7-ubuntu18.04 上测试，请从源码安装 tensorflow-gpu（1.9.0 版本）、Anaconda、CUDA9.0、CUDNN7.0。
+  - 使用 pip 安装依赖项
    ```
    pip install -r requirements.txt
    ```
-  - Or install the dependencies using anaconda
+  - 或使用 anaconda 安装依赖项
   ```bash
   conda install -y --channel=https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main --channel=https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge \
         numpy==1.18.1 \
@@ -32,15 +32,12 @@ Due to regulatory issues of China, we must remove the geoference information and
   - run test code using `python -u 'test.py'`
   ```
 
-## Dataset and model
+## 数据集和模型
 
-The UAV images covering six town were obtained for the landslides caused by the earthquake in Jiuzhaigou, China on August 8, 2017.
+覆盖 6 个城镇的无人机图像是针对 2017 年 8 月 8 日中国九寨沟地震造成的山体滑坡获得的。
 
-# Reproduction
 
-The code is also on [Code Ocean](https://codeocean.com/capsule/0157338/tree/v1) for the convinience of reproduction.
-
-## Cite
+## 引用
 
 ```
 @article{zhu2020deep,
